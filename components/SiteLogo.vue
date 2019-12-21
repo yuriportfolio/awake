@@ -26,7 +26,7 @@ export default {
     return {
       frames: 5,
       currentFrame: 1,
-      blinking: true
+      blinking: false
     }
   },
   mounted() {
