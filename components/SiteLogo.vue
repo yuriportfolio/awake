@@ -11,11 +11,7 @@
         :key="x"
         :src="`/logo-frames/logo-f0.png`"
       />
-      <img
-        v-for="x in frames"
-        :key="`${x}-r`"
-        :src="`/logo-frames/logo-f${frames - x}.svg`"
-      />
+     
     </div>
   </div>
 </template>
@@ -24,7 +20,7 @@ export default {
   name: 'SiteLogo',
   data() {
     return {
-      frames: 5,
+      frames: 1,
       currentFrame: 1,
       blinking: false
     }
@@ -32,7 +28,7 @@ export default {
   mounted() {
     setInterval(() => {
       const rand = Math.ceil(Math.random() * 10)
-      this.blinking = rand % 2
+      this.blinking = 0
     }, 1000)
   }
 }
