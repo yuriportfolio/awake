@@ -85,9 +85,9 @@ export default {
     on: true,
     theme: null, // See card.theme (can be unique for posts if set here)
     imageDimensions: null, // See card.imageDimensions (can be unique for posts if set here)
-    displayAuthor: true,
+    displayAuthor: false,
     date: {
-      display: true
+      display: false
     },
     perRow: 3,
     perPage: 6
