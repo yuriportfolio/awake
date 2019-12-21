@@ -9,12 +9,12 @@ import theCMS from '../cms/netlify/cms'
  * General Site configurations
  */
 export default {
-  siteName: 'Awake',
-  tagline: 'A Nuxt.js Theme for Netlify CMS',
+  siteName: 'Frent',
+  tagline: 'Машины в прокат',
   featureImage: '/uploads/home-hero.jpg',
   logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
-    on: true,
+    on: false,
     id: process.env.GOOGLE_ANALYTICS_ID
   },
   mainMenu: [
@@ -48,20 +48,20 @@ export default {
   // Main Layout/Style
   layout: {
     width: 'contained', // Options: contained, full
-    theme: 'one-column' // Options: one-column, sidebar-right, sidebar-left
+    theme: 'sidebar-left' // Options: one-column, sidebar-right, sidebar-left
   },
 
   // Card Layout
   cards: {
-    imageDimensions: '2x1', // Options: 1x1, 5x4, 4x3, 3x2, 5x3, 16x9, 2x1, 3x1, 4x5, 3x4, 2x3, 3x5, 9x16
-    theme: 'boxes' // Options: boxes, grid, image-grid
+    imageDimensions: '2x3', // Options: 1x1, 5x4, 4x3, 3x2, 5x3, 16x9, 2x1, 3x1, 4x5, 3x4, 2x3, 3x5, 9x16
+    theme: 'grid' // Options: boxes, grid, image-grid
   },
 
   // Disqus
   disqus: {
     on: true,
     loadingStrategy: 'button', // Options: onload, lazy, button
-    siteShortName: 'blog-danielkelly-io' // 'blog-danielkelly-io'
+    siteShortName: 'frent-car-rent' // 'blog-danielkelly-io'
   },
 
   // Newsletter Subscribe
@@ -74,7 +74,7 @@ export default {
     mailchimp: {
       on: true,
       formAction:
-        'https://danielkelly.us3.list-manage.com/subscribe/post?u=d3c2e762b66a2353d0bc29bf3&amp;id=2abeaa06e0'
+        ''
     },
     custom: {
       on: false,
