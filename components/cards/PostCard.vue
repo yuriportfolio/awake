@@ -10,20 +10,17 @@
     "
   >
     <span
-      v-if="author && $siteConfig.posts.displayAuthor"
+      v-if="korobka && $siteConfig.posts.displayAuthor"
       class="author-wrapper"
     >
       <strong>Коробка:</strong> {{ korobka }} |
-    </span>
-    <span v-if="date" class="date-wrapper">
-      <strong>Published on:</strong> {{ datePretty }}
     </span>
   </generic-card>
 </template>
 
 <script>
 import GenericCard from './GenericCard'
-import { getFormattedDate } from '~/helper'
+
 export default {
   components: { GenericCard },
   props: {
@@ -38,12 +35,13 @@ export default {
     link: {
       type: String,
       default: ''
-    }
-  },
+    },
+    korobka: {		
+       type: String,		
+       default: ''
+  }
   computed: {
-    datePretty() {
-      return getFormattedDate(this.date)
-    }
+   
   }
 }
 </script>
