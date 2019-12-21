@@ -13,7 +13,7 @@
       v-if="author && $siteConfig.posts.displayAuthor"
       class="author-wrapper"
     >
-      <strong>Author:</strong> {{ author }} |
+      <strong>Коробка:</strong> {{ korobka }} |
     </span>
     <span v-if="date" class="date-wrapper">
       <strong>Published on:</strong> {{ datePretty }}
@@ -36,14 +36,6 @@ export default {
       default: ''
     },
     link: {
-      type: String,
-      default: ''
-    },
-    date: {
-      type: String,
-      default: ''
-    },
-    author: {
       type: String,
       default: ''
     }
