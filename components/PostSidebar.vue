@@ -1,7 +1,7 @@
 <template>
   <div class="post-sidebar box">
-    Sidear Here
-  </div>
+Машины данной категории
+</div>
 </template>
 <script>
 export default {
