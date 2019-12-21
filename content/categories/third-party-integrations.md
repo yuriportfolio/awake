@@ -1,5 +1,6 @@
 ---
-name: Third Party Integrations
-image: https://picsum.photos/1800/1801
+name: Внедорожник
+image: /uploads/home-hero.jpg
+description: аля джип
 ---
-Extend the functionality of Awake with third party integrations
+
