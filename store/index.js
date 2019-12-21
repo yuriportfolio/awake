@@ -4,9 +4,7 @@ export const state = () => ({
   title: '',
   subtitle: '',
   featureImage: '',
-  content: '',
-  author: '',
-  date: ''
+  content: ''
 })
 export const mutations = {
   set(state, data) {
